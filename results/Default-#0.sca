@@ -1,14 +1,14 @@
 version 2
-run Default-0-20210517-13:35:02-6400
+run Default-0-20210517-16:38:36-4732
 attr configname Default
-attr datetime 20210517-13:35:02
+attr datetime 20210517-16:38:36
 attr experiment Default
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network EmergencyLaneScenario
-attr processid 6400
+attr processid 4732
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -51,15 +51,53 @@ param *.node[*0].veinsmobility.accidentCount 1
 param *.node[*0].veinsmobility.accidentStart 73s
 param *.node[*0].veinsmobility.accidentDuration 50s
 
+scalar EmergencyLaneScenario.node[5].appl generatedWSMs 15
+scalar EmergencyLaneScenario.node[5].appl receivedWSMs 0
+scalar EmergencyLaneScenario.node[5].appl generatedBSMs 0
+scalar EmergencyLaneScenario.node[5].appl receivedBSMs 0
+scalar EmergencyLaneScenario.node[5].appl generatedWSAs 0
+scalar EmergencyLaneScenario.node[5].appl receivedWSAs 0
+scalar EmergencyLaneScenario.node[5].nic.phy80211p busyTime 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 ReceivedBroadcasts 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 SentPackets 15
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 SentAcknowledgements 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 RetriesExceeded 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 SNIRLostPackets 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 RXTXLostPackets 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 TotalLostPackets 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 DroppedPacketsInMac 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 TooLittleTime 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 TimesIntoBackoff 15
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 SlotsBackoff 22
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 NumInternalContention 0
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 totalBusyTime 0.003495
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 sentPackets:count 15
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar EmergencyLaneScenario.node[5].nic.mac1609_4 channelBusy:timeavg 0.00024963852103699
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar EmergencyLaneScenario.node[5].veinsmobility startTime 11
+scalar EmergencyLaneScenario.node[5].veinsmobility totalTime 14
+scalar EmergencyLaneScenario.node[5].veinsmobility stopTime 25.000243173537
+scalar EmergencyLaneScenario.node[5].veinsmobility minSpeed 2.1927444331115
+scalar EmergencyLaneScenario.node[5].veinsmobility maxSpeed 13.854396125241
+scalar EmergencyLaneScenario.node[5].veinsmobility totalDistance 149.27956208112
+scalar EmergencyLaneScenario.node[5].veinsmobility totalCO2Emission 48.492646772193
 scalar EmergencyLaneScenario.node[0].appl generatedWSMs 0
-scalar EmergencyLaneScenario.node[0].appl receivedWSMs 0
+scalar EmergencyLaneScenario.node[0].appl receivedWSMs 14
 scalar EmergencyLaneScenario.node[0].appl generatedBSMs 0
 scalar EmergencyLaneScenario.node[0].appl receivedBSMs 0
 scalar EmergencyLaneScenario.node[0].appl generatedWSAs 0
 scalar EmergencyLaneScenario.node[0].appl receivedWSAs 0
-scalar EmergencyLaneScenario.node[0].nic.phy80211p busyTime 0
+scalar EmergencyLaneScenario.node[0].nic.phy80211p busyTime 0.00014499853084143
 scalar EmergencyLaneScenario.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar EmergencyLaneScenario.node[0].nic.mac1609_4 ReceivedBroadcasts 0
+scalar EmergencyLaneScenario.node[0].nic.mac1609_4 ReceivedBroadcasts 14
 scalar EmergencyLaneScenario.node[0].nic.mac1609_4 SentPackets 0
 scalar EmergencyLaneScenario.node[0].nic.mac1609_4 SentAcknowledgements 0
 scalar EmergencyLaneScenario.node[0].nic.mac1609_4 RetriesExceeded 0
@@ -71,7 +109,7 @@ scalar EmergencyLaneScenario.node[0].nic.mac1609_4 TooLittleTime 0
 scalar EmergencyLaneScenario.node[0].nic.mac1609_4 TimesIntoBackoff 0
 scalar EmergencyLaneScenario.node[0].nic.mac1609_4 SlotsBackoff 0
 scalar EmergencyLaneScenario.node[0].nic.mac1609_4 NumInternalContention 0
-scalar EmergencyLaneScenario.node[0].nic.mac1609_4 totalBusyTime 0
+scalar EmergencyLaneScenario.node[0].nic.mac1609_4 totalBusyTime 0.003248
 scalar EmergencyLaneScenario.node[0].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar EmergencyLaneScenario.node[0].nic.mac1609_4 sentAcks:count 0
@@ -80,24 +118,24 @@ scalar EmergencyLaneScenario.node[0].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar EmergencyLaneScenario.node[0].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar EmergencyLaneScenario.node[0].nic.mac1609_4 channelBusy:timeavg 0
+scalar EmergencyLaneScenario.node[0].nic.mac1609_4 channelBusy:timeavg 0.00014498516160189
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar EmergencyLaneScenario.node[0].veinsmobility startTime 1
-scalar EmergencyLaneScenario.node[0].veinsmobility totalTime 43
-scalar EmergencyLaneScenario.node[0].veinsmobility stopTime 45
+scalar EmergencyLaneScenario.node[0].veinsmobility totalTime 24
+scalar EmergencyLaneScenario.node[0].veinsmobility stopTime 25.000243173537
 scalar EmergencyLaneScenario.node[0].veinsmobility minSpeed 2.0578714020317
-scalar EmergencyLaneScenario.node[0].veinsmobility maxSpeed 15.481088737209
-scalar EmergencyLaneScenario.node[0].veinsmobility totalDistance 582.25108316617
-scalar EmergencyLaneScenario.node[0].veinsmobility totalCO2Emission 130.81397225422
+scalar EmergencyLaneScenario.node[0].veinsmobility maxSpeed 15.151062291764
+scalar EmergencyLaneScenario.node[0].veinsmobility totalDistance 299.3051260935
+scalar EmergencyLaneScenario.node[0].veinsmobility totalCO2Emission 78.781160117899
 scalar EmergencyLaneScenario.node[1].appl generatedWSMs 0
-scalar EmergencyLaneScenario.node[1].appl receivedWSMs 0
+scalar EmergencyLaneScenario.node[1].appl receivedWSMs 14
 scalar EmergencyLaneScenario.node[1].appl generatedBSMs 0
 scalar EmergencyLaneScenario.node[1].appl receivedBSMs 0
 scalar EmergencyLaneScenario.node[1].appl generatedWSAs 0
 scalar EmergencyLaneScenario.node[1].appl receivedWSAs 0
-scalar EmergencyLaneScenario.node[1].nic.phy80211p busyTime 0
+scalar EmergencyLaneScenario.node[1].nic.phy80211p busyTime 0.00015130274813807
 scalar EmergencyLaneScenario.node[1].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar EmergencyLaneScenario.node[1].nic.mac1609_4 ReceivedBroadcasts 0
+scalar EmergencyLaneScenario.node[1].nic.mac1609_4 ReceivedBroadcasts 14
 scalar EmergencyLaneScenario.node[1].nic.mac1609_4 SentPackets 0
 scalar EmergencyLaneScenario.node[1].nic.mac1609_4 SentAcknowledgements 0
 scalar EmergencyLaneScenario.node[1].nic.mac1609_4 RetriesExceeded 0
@@ -109,7 +147,7 @@ scalar EmergencyLaneScenario.node[1].nic.mac1609_4 TooLittleTime 0
 scalar EmergencyLaneScenario.node[1].nic.mac1609_4 TimesIntoBackoff 0
 scalar EmergencyLaneScenario.node[1].nic.mac1609_4 SlotsBackoff 0
 scalar EmergencyLaneScenario.node[1].nic.mac1609_4 NumInternalContention 0
-scalar EmergencyLaneScenario.node[1].nic.mac1609_4 totalBusyTime 0
+scalar EmergencyLaneScenario.node[1].nic.mac1609_4 totalBusyTime 0.003248
 scalar EmergencyLaneScenario.node[1].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar EmergencyLaneScenario.node[1].nic.mac1609_4 sentAcks:count 0
@@ -118,24 +156,24 @@ scalar EmergencyLaneScenario.node[1].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar EmergencyLaneScenario.node[1].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar EmergencyLaneScenario.node[1].nic.mac1609_4 channelBusy:timeavg 0
+scalar EmergencyLaneScenario.node[1].nic.mac1609_4 channelBusy:timeavg 0.00015129337762845
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar EmergencyLaneScenario.node[1].veinsmobility startTime 2
-scalar EmergencyLaneScenario.node[1].veinsmobility totalTime 46
-scalar EmergencyLaneScenario.node[1].veinsmobility stopTime 49
+scalar EmergencyLaneScenario.node[1].veinsmobility totalTime 23
+scalar EmergencyLaneScenario.node[1].veinsmobility stopTime 25.000243173537
 scalar EmergencyLaneScenario.node[1].veinsmobility minSpeed 1.8865424470045
 scalar EmergencyLaneScenario.node[1].veinsmobility maxSpeed 14.448736614326
-scalar EmergencyLaneScenario.node[1].veinsmobility totalDistance 587.2672375175
-scalar EmergencyLaneScenario.node[1].veinsmobility totalCO2Emission 121.39551745301
+scalar EmergencyLaneScenario.node[1].veinsmobility totalDistance 267.3733441046
+scalar EmergencyLaneScenario.node[1].veinsmobility totalCO2Emission 72.443998768001
 scalar EmergencyLaneScenario.node[2].appl generatedWSMs 0
-scalar EmergencyLaneScenario.node[2].appl receivedWSMs 0
+scalar EmergencyLaneScenario.node[2].appl receivedWSMs 14
 scalar EmergencyLaneScenario.node[2].appl generatedBSMs 0
 scalar EmergencyLaneScenario.node[2].appl receivedBSMs 0
 scalar EmergencyLaneScenario.node[2].appl generatedWSAs 0
 scalar EmergencyLaneScenario.node[2].appl receivedWSAs 0
-scalar EmergencyLaneScenario.node[2].nic.phy80211p busyTime 0
+scalar EmergencyLaneScenario.node[2].nic.phy80211p busyTime 0.00016571236681608
 scalar EmergencyLaneScenario.node[2].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar EmergencyLaneScenario.node[2].nic.mac1609_4 ReceivedBroadcasts 0
+scalar EmergencyLaneScenario.node[2].nic.mac1609_4 ReceivedBroadcasts 14
 scalar EmergencyLaneScenario.node[2].nic.mac1609_4 SentPackets 0
 scalar EmergencyLaneScenario.node[2].nic.mac1609_4 SentAcknowledgements 0
 scalar EmergencyLaneScenario.node[2].nic.mac1609_4 RetriesExceeded 0
@@ -147,7 +185,7 @@ scalar EmergencyLaneScenario.node[2].nic.mac1609_4 TooLittleTime 0
 scalar EmergencyLaneScenario.node[2].nic.mac1609_4 TimesIntoBackoff 0
 scalar EmergencyLaneScenario.node[2].nic.mac1609_4 SlotsBackoff 0
 scalar EmergencyLaneScenario.node[2].nic.mac1609_4 NumInternalContention 0
-scalar EmergencyLaneScenario.node[2].nic.mac1609_4 totalBusyTime 0
+scalar EmergencyLaneScenario.node[2].nic.mac1609_4 totalBusyTime 0.003248
 scalar EmergencyLaneScenario.node[2].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar EmergencyLaneScenario.node[2].nic.mac1609_4 sentAcks:count 0
@@ -156,24 +194,24 @@ scalar EmergencyLaneScenario.node[2].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar EmergencyLaneScenario.node[2].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar EmergencyLaneScenario.node[2].nic.mac1609_4 channelBusy:timeavg 0
+scalar EmergencyLaneScenario.node[2].nic.mac1609_4 channelBusy:timeavg 0.0001657061293645
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar EmergencyLaneScenario.node[2].veinsmobility startTime 4
-scalar EmergencyLaneScenario.node[2].veinsmobility totalTime 46
-scalar EmergencyLaneScenario.node[2].veinsmobility stopTime 51
+scalar EmergencyLaneScenario.node[2].veinsmobility totalTime 21
+scalar EmergencyLaneScenario.node[2].veinsmobility stopTime 25.000243173537
 scalar EmergencyLaneScenario.node[2].veinsmobility minSpeed 2.5998513045954
-scalar EmergencyLaneScenario.node[2].veinsmobility maxSpeed 14.28231895242
-scalar EmergencyLaneScenario.node[2].veinsmobility totalDistance 593.09903603735
-scalar EmergencyLaneScenario.node[2].veinsmobility totalCO2Emission 130.17687885507
+scalar EmergencyLaneScenario.node[2].veinsmobility maxSpeed 14.111516393647
+scalar EmergencyLaneScenario.node[2].veinsmobility totalDistance 242.47513160139
+scalar EmergencyLaneScenario.node[2].veinsmobility totalCO2Emission 70.756693859853
 scalar EmergencyLaneScenario.node[4].appl generatedWSMs 0
-scalar EmergencyLaneScenario.node[4].appl receivedWSMs 0
+scalar EmergencyLaneScenario.node[4].appl receivedWSMs 15
 scalar EmergencyLaneScenario.node[4].appl generatedBSMs 0
 scalar EmergencyLaneScenario.node[4].appl receivedBSMs 0
 scalar EmergencyLaneScenario.node[4].appl generatedWSAs 0
 scalar EmergencyLaneScenario.node[4].appl receivedWSAs 0
-scalar EmergencyLaneScenario.node[4].nic.phy80211p busyTime 0
+scalar EmergencyLaneScenario.node[4].nic.phy80211p busyTime 0.0001933307215047
 scalar EmergencyLaneScenario.node[4].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar EmergencyLaneScenario.node[4].nic.mac1609_4 ReceivedBroadcasts 0
+scalar EmergencyLaneScenario.node[4].nic.mac1609_4 ReceivedBroadcasts 15
 scalar EmergencyLaneScenario.node[4].nic.mac1609_4 SentPackets 0
 scalar EmergencyLaneScenario.node[4].nic.mac1609_4 SentAcknowledgements 0
 scalar EmergencyLaneScenario.node[4].nic.mac1609_4 RetriesExceeded 0
@@ -185,7 +223,7 @@ scalar EmergencyLaneScenario.node[4].nic.mac1609_4 TooLittleTime 0
 scalar EmergencyLaneScenario.node[4].nic.mac1609_4 TimesIntoBackoff 0
 scalar EmergencyLaneScenario.node[4].nic.mac1609_4 SlotsBackoff 0
 scalar EmergencyLaneScenario.node[4].nic.mac1609_4 NumInternalContention 0
-scalar EmergencyLaneScenario.node[4].nic.mac1609_4 totalBusyTime 0
+scalar EmergencyLaneScenario.node[4].nic.mac1609_4 totalBusyTime 0.00348
 scalar EmergencyLaneScenario.node[4].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar EmergencyLaneScenario.node[4].nic.mac1609_4 sentAcks:count 0
@@ -194,24 +232,24 @@ scalar EmergencyLaneScenario.node[4].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar EmergencyLaneScenario.node[4].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar EmergencyLaneScenario.node[4].nic.mac1609_4 channelBusy:timeavg 0
+scalar EmergencyLaneScenario.node[4].nic.mac1609_4 channelBusy:timeavg 0.0001933307215047
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar EmergencyLaneScenario.node[4].veinsmobility startTime 7
-scalar EmergencyLaneScenario.node[4].veinsmobility totalTime 47
-scalar EmergencyLaneScenario.node[4].veinsmobility stopTime 55
+scalar EmergencyLaneScenario.node[4].veinsmobility totalTime 18
+scalar EmergencyLaneScenario.node[4].veinsmobility stopTime 25.000243173537
 scalar EmergencyLaneScenario.node[4].veinsmobility minSpeed 2.0844450560166
-scalar EmergencyLaneScenario.node[4].veinsmobility maxSpeed 14.084909130356
-scalar EmergencyLaneScenario.node[4].veinsmobility totalDistance 594.09137368205
-scalar EmergencyLaneScenario.node[4].veinsmobility totalCO2Emission 130.58633702494
+scalar EmergencyLaneScenario.node[4].veinsmobility maxSpeed 12.281743268398
+scalar EmergencyLaneScenario.node[4].veinsmobility totalDistance 181.67439042158
+scalar EmergencyLaneScenario.node[4].veinsmobility totalCO2Emission 50.784609890715
 scalar EmergencyLaneScenario.node[3].appl generatedWSMs 0
-scalar EmergencyLaneScenario.node[3].appl receivedWSMs 0
+scalar EmergencyLaneScenario.node[3].appl receivedWSMs 14
 scalar EmergencyLaneScenario.node[3].appl generatedBSMs 0
 scalar EmergencyLaneScenario.node[3].appl receivedBSMs 0
 scalar EmergencyLaneScenario.node[3].appl generatedWSAs 0
 scalar EmergencyLaneScenario.node[3].appl receivedWSAs 0
-scalar EmergencyLaneScenario.node[3].nic.phy80211p busyTime 0
+scalar EmergencyLaneScenario.node[3].nic.phy80211p busyTime 0.00017399788441595
 scalar EmergencyLaneScenario.node[3].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar EmergencyLaneScenario.node[3].nic.mac1609_4 ReceivedBroadcasts 0
+scalar EmergencyLaneScenario.node[3].nic.mac1609_4 ReceivedBroadcasts 15
 scalar EmergencyLaneScenario.node[3].nic.mac1609_4 SentPackets 0
 scalar EmergencyLaneScenario.node[3].nic.mac1609_4 SentAcknowledgements 0
 scalar EmergencyLaneScenario.node[3].nic.mac1609_4 RetriesExceeded 0
@@ -223,7 +261,7 @@ scalar EmergencyLaneScenario.node[3].nic.mac1609_4 TooLittleTime 0
 scalar EmergencyLaneScenario.node[3].nic.mac1609_4 TimesIntoBackoff 0
 scalar EmergencyLaneScenario.node[3].nic.mac1609_4 SlotsBackoff 0
 scalar EmergencyLaneScenario.node[3].nic.mac1609_4 NumInternalContention 0
-scalar EmergencyLaneScenario.node[3].nic.mac1609_4 totalBusyTime 0
+scalar EmergencyLaneScenario.node[3].nic.mac1609_4 totalBusyTime 0.00348
 scalar EmergencyLaneScenario.node[3].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar EmergencyLaneScenario.node[3].nic.mac1609_4 sentAcks:count 0
@@ -232,52 +270,14 @@ scalar EmergencyLaneScenario.node[3].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar EmergencyLaneScenario.node[3].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar EmergencyLaneScenario.node[3].nic.mac1609_4 channelBusy:timeavg 0
+scalar EmergencyLaneScenario.node[3].nic.mac1609_4 channelBusy:timeavg 0.00017399788441595
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar EmergencyLaneScenario.node[3].veinsmobility startTime 5
-scalar EmergencyLaneScenario.node[3].veinsmobility totalTime 53
-scalar EmergencyLaneScenario.node[3].veinsmobility stopTime 59
+scalar EmergencyLaneScenario.node[3].veinsmobility totalTime 20
+scalar EmergencyLaneScenario.node[3].veinsmobility stopTime 25.000243173537
 scalar EmergencyLaneScenario.node[3].veinsmobility minSpeed 1.8164076185087
-scalar EmergencyLaneScenario.node[3].veinsmobility maxSpeed 12.215571974544
-scalar EmergencyLaneScenario.node[3].veinsmobility totalDistance 585.76945437169
-scalar EmergencyLaneScenario.node[3].veinsmobility totalCO2Emission 129.39723213579
-scalar EmergencyLaneScenario.node[5].appl generatedWSMs 0
-scalar EmergencyLaneScenario.node[5].appl receivedWSMs 0
-scalar EmergencyLaneScenario.node[5].appl generatedBSMs 0
-scalar EmergencyLaneScenario.node[5].appl receivedBSMs 0
-scalar EmergencyLaneScenario.node[5].appl generatedWSAs 0
-scalar EmergencyLaneScenario.node[5].appl receivedWSAs 0
-scalar EmergencyLaneScenario.node[5].nic.phy80211p busyTime 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 ReceivedBroadcasts 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 SentPackets 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 SentAcknowledgements 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 RetriesExceeded 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 SNIRLostPackets 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 RXTXLostPackets 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 TotalLostPackets 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 DroppedPacketsInMac 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 TooLittleTime 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 TimesIntoBackoff 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 SlotsBackoff 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 NumInternalContention 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 totalBusyTime 0
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 retriesExceeded:count 0
-attr source org_car2x_veins_modules_mac_sigRetriesExceeded
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 sentAcks:count 0
-attr source org_car2x_veins_modules_mac_sigSentAck
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 sentPackets:count 0
-attr source org_car2x_veins_modules_mac_sigSentPacket
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 collisions:count 0
-attr source org_car2x_veins_modules_mac_sigCollision
-scalar EmergencyLaneScenario.node[5].nic.mac1609_4 channelBusy:timeavg 0
-attr source org_car2x_veins_modules_mac_sigChannelBusy
-scalar EmergencyLaneScenario.node[5].veinsmobility startTime 11
-scalar EmergencyLaneScenario.node[5].veinsmobility totalTime 47
-scalar EmergencyLaneScenario.node[5].veinsmobility stopTime 59
-scalar EmergencyLaneScenario.node[5].veinsmobility minSpeed 2.1927444331115
-scalar EmergencyLaneScenario.node[5].veinsmobility maxSpeed 13.864822954065
-scalar EmergencyLaneScenario.node[5].veinsmobility totalDistance 591.12587801415
-scalar EmergencyLaneScenario.node[5].veinsmobility totalCO2Emission 125.057082992
+scalar EmergencyLaneScenario.node[3].veinsmobility maxSpeed 12.24023218134
+scalar EmergencyLaneScenario.node[3].veinsmobility totalDistance 202.70606161973
+scalar EmergencyLaneScenario.node[3].veinsmobility totalCO2Emission 56.355215013751
 scalar EmergencyLaneScenario.manager roiArea 0
 
