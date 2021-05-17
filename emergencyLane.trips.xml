@@ -4,15 +4,15 @@
 <routes>
 
     <vType id="emergency" vClass="emergency" guiShape='emergency'/>
-    <vType id="passenger" vClass="passenger"/>
+    <vType id="passenger" vClass="passenger" maxSpeed='7'/>
     
     <route edges="gneE9" color="yellow" id="route_0"/>
 
     <vehicle id="vehicle_1" type="passenger" depart="0.00" route="route_0" departLane="1"/>
-    <vehicle id="vehicle_2" type="passenger" depart="0.90" route="route_0" departLane="0"/>
-    <vehicle id="vehicle_3" type="passenger" depart="1.00" route="route_0" departLane="1"/>
-    <vehicle id="vehicle_4" type="passenger" depart="2.00" route="route_0" departLane="1"/>
-    <vehicle id="vehicle_5" type="passenger" depart="2.10" route="route_0" departLane="0"/>
-    <vehicle id="vehicle_0" type="emergency" depart="10.00" route="route_0" departLane="1" arrivalLane="1"/>
+    <vehicle id="vehicle_2" type="passenger" depart="2.90" route="route_0" departLane="0"/>
+    <vehicle id="vehicle_3" type="passenger" depart="5.00" route="route_0" departLane="1"/>
+    <vehicle id="vehicle_4" type="passenger" depart="9.80" route="route_0" departLane="0"/>
+    <vehicle id="vehicle_5" type="passenger" depart="12.00" route="route_0" departLane="1"/>
+    <vehicle id="vehicle_0" type="emergency" depart="35.00" route="route_0" departLane="1" arrivalLane="1"/>
 
 </routes>

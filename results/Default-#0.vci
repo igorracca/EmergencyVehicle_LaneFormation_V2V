@@ -1,0 +1,112 @@
+file 64872 1621281899                                           
+version 2
+run Default-0-20210517-22:03:37-7076
+attr configname Default
+attr datetime 20210517-22:03:37
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network EmergencyLaneScenario
+attr processid 7076
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"emergencyLane.launchd.xml\")"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"TraCIDemo11p\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+
+vector 0 EmergencyLaneScenario.node[0].veinsmobility posx ETV
+vector 1 EmergencyLaneScenario.node[0].veinsmobility posy ETV
+vector 2 EmergencyLaneScenario.node[0].veinsmobility speed ETV
+vector 3 EmergencyLaneScenario.node[0].veinsmobility acceleration ETV
+vector 4 EmergencyLaneScenario.node[0].veinsmobility co2emission ETV
+vector 5 EmergencyLaneScenario.node[1].veinsmobility posx ETV
+vector 6 EmergencyLaneScenario.node[1].veinsmobility posy ETV
+vector 7 EmergencyLaneScenario.node[1].veinsmobility speed ETV
+vector 8 EmergencyLaneScenario.node[2].veinsmobility posx ETV
+vector 9 EmergencyLaneScenario.node[2].veinsmobility posy ETV
+vector 10 EmergencyLaneScenario.node[1].veinsmobility acceleration ETV
+vector 11 EmergencyLaneScenario.node[1].veinsmobility co2emission ETV
+vector 12 EmergencyLaneScenario.node[2].veinsmobility speed ETV
+vector 13 EmergencyLaneScenario.node[2].veinsmobility acceleration ETV
+vector 14 EmergencyLaneScenario.node[2].veinsmobility co2emission ETV
+vector 15 EmergencyLaneScenario.node[3].veinsmobility posx ETV
+vector 16 EmergencyLaneScenario.node[3].veinsmobility posy ETV
+vector 17 EmergencyLaneScenario.node[3].veinsmobility speed ETV
+vector 18 EmergencyLaneScenario.node[4].veinsmobility posx ETV
+vector 19 EmergencyLaneScenario.node[4].veinsmobility posy ETV
+vector 20 EmergencyLaneScenario.node[3].veinsmobility acceleration ETV
+vector 21 EmergencyLaneScenario.node[3].veinsmobility co2emission ETV
+vector 22 EmergencyLaneScenario.node[4].veinsmobility speed ETV
+vector 23 EmergencyLaneScenario.node[4].veinsmobility acceleration ETV
+vector 24 EmergencyLaneScenario.node[4].veinsmobility co2emission ETV
+vector 25 EmergencyLaneScenario.node[5].veinsmobility posx ETV
+vector 26 EmergencyLaneScenario.node[5].veinsmobility posy ETV
+vector 27 EmergencyLaneScenario.node[5].veinsmobility speed ETV
+vector 28 EmergencyLaneScenario.node[5].veinsmobility acceleration ETV
+vector 29 EmergencyLaneScenario.node[5].veinsmobility co2emission ETV
+29	3862 1121 78 318 38 83 46 0.973 9.1734921322607 123.72095673263 491.92966524763
+28	4983 1296 78 318 38 83 46 -0.93076490308158 2.3431838384131 11.301279310845 33.576613196041
+27	6279 1254 39 318 37 83 47 1.8290148281725 13.866225235849 583.92622900701 7580.0110902735
+26	7533 756 37 318 36 83 48 26.6 26.6 1276.8 33962.88
+25	8289 1269 37 318 36 83 48 31.6 615.52622900701 14630.184304599 6028940.79701
+4	9558 2025 4 331 3 96 94 0.973 3.5242540242387 151.29397330338 285.93390720903
+3	11583 2520 4 331 3 96 94 -1.2180177817587 1.6635781639256 3.6882919025607 27.714965545449
+2	14103 2398 3 331 2 96 95 2.0578714020317 6.9998513045954 593.39350230726 3746.90440664
+1	16501 1376 2 331 1 96 96 26.6 29.8 2841.6 84168.96
+0	17877 2415 2 331 1 96 96 30.1 623.49350230726 30861.254816372 12877864.384345
+11	20292 2087 7 334 6 99 94 0.973 3.5698466067243 154.92918930797 308.13513440558
+10	22379 2624 7 334 6 99 94 -1.169061293453 1.8293019986944 3.8521498626331 34.407596187147
+7	25003 2403 6 334 5 99 95 1.8865424470045 6.9938958732877 592.91887880664 3741.5921774535
+6	27406 1385 5 334 4 99 96 29.8 29.8 2860.8 85251.84
+5	28791 2419 5 334 4 99 96 30.1 623.01887880664 30958.113486025 12922667.51819
+14	31210 2094 9 336 8 101 94 0.973 4.8503860066597 154.31739445791 310.78224178216
+13	33304 2628 9 336 8 101 94 -1.6804361440586 2.4092173396843 4.1588433202822 36.00359966828
+12	35932 2513 8 336 7 101 95 2.2069676619256 6.978383639711 588.94129992089 3691.06470963
+9	38445 1393 7 336 6 101 96 26.6 29.8 2758.4 79476.48
+8	39838 2429 7 336 6 101 96 30.1 619.04129992089 30750.308032943 12714249.380256
+21	42267 2114 14 340 13 105 93 0.973 4.0349680058762 153.51557831077 300.60868180405
+20	44381 2615 14 340 13 105 93 -1.0897478351137 1.979035354848 3.6757973288419 31.465410884169
+17	46996 2498 13 340 12 105 94 2.213205013168 6.9490558743477 590.59312788532 3747.9351750735
+16	49494 1489 12 340 11 105 95 29.8 29.8 2831 84363.8
+15	50983 2515 12 340 11 105 95 30.1 620.69312788532 30613.125115313 12768501.731589
+24	53498 2150 16 343 15 108 94 0.973 4.4797122737601 157.70249868809 320.07284157702
+23	55648 2639 16 343 15 108 94 -1.4972668222502 2.0842022907455 4.259423051239 39.883748817307
+22	58287 2532 15 343 14 108 95 2.1507710573962 6.9878362877294 589.60059144209 3696.9790492392
+19	60819 1510 14 343 13 108 96 26.6 29.8 2780.8 80739.84
+18	62329 2541 14 343 13 108 96 30.1 619.70059144209 30795.978260068 12744368.477444
+
