@@ -1,15 +1,15 @@
-file 2801 1621191646                                            
+file 36237 1621251309                                           
 version 2
-run Default-0-20210516-21:00:36-18576
+run Default-0-20210517-13:35:02-6400
 attr configname Default
-attr datetime 20210516-21:00:36
+attr datetime 20210517-13:35:02
 attr experiment Default
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
-attr network RSUExampleScenario
-attr processid 18576
+attr network EmergencyLaneScenario
+attr processid 6400
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -19,12 +19,11 @@ param *.playgroundSizeX 2500m
 param *.playgroundSizeY 2500m
 param *.playgroundSizeZ 50m
 param *.annotations.draw true
-param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
 param *.manager.updateInterval 1s
 param *.manager.host "\"localhost\""
 param *.manager.port 9999
 param *.manager.autoShutdown true
-param *.manager.launchConfig "xmldoc(\"erlangen.launchd.xml\")"
+param *.manager.launchConfig "xmldoc(\"emergencyLane.launchd.xml\")"
 param *.connectionManager.sendDirect true
 param *.connectionManager.maxInterfDist 2600m
 param *.connectionManager.drawMaxIntfDist false
@@ -53,20 +52,64 @@ param *.node[*0].veinsmobility.accidentCount 1
 param *.node[*0].veinsmobility.accidentStart 73s
 param *.node[*0].veinsmobility.accidentDuration 50s
 
-vector 0 RSUExampleScenario.node[4].veinsmobility posx ETV
-vector 1 RSUExampleScenario.node[4].veinsmobility posy ETV
-vector 2 RSUExampleScenario.node[5].veinsmobility posx ETV
-vector 3 RSUExampleScenario.node[5].veinsmobility posy ETV
-vector 4 RSUExampleScenario.node[6].veinsmobility posx ETV
-vector 5 RSUExampleScenario.node[6].veinsmobility posy ETV
-vector 6 RSUExampleScenario.node[7].veinsmobility posx ETV
-vector 7 RSUExampleScenario.node[7].veinsmobility posy ETV
-0	2599 25 63 63 62 62 1 2284.0443885722 2284.0443885722 2284.0443885722 5216858.7689682
-1	2624 25 63 63 62 62 1 2116.7397221709 2116.7397221709 2116.7397221709 4480587.051416
-2	2649 25 63 63 62 62 1 2446.1938455781 2446.1938455781 2446.1938455781 5983864.3301443
-3	2674 25 63 63 62 62 1 1984.1834096704 1984.1834096704 1984.1834096704 3936983.8032111
-4	2699 25 63 63 62 62 1 2431.8261814202 2431.8261814202 2431.8261814202 5913778.576641
-5	2724 25 63 63 62 62 1 1711.8398718042 1711.8398718042 1711.8398718042 2930395.7466987
-6	2749 25 63 63 62 62 1 2411.7159066279 2411.7159066279 2411.7159066279 5816373.6142822
-7	2774 25 63 63 62 62 1 1579.6113166725 1579.6113166725 1579.6113166725 2495171.9117599
+vector 0 EmergencyLaneScenario.node[0].veinsmobility posx ETV
+vector 1 EmergencyLaneScenario.node[0].veinsmobility posy ETV
+vector 2 EmergencyLaneScenario.node[1].veinsmobility posx ETV
+vector 3 EmergencyLaneScenario.node[1].veinsmobility posy ETV
+vector 4 EmergencyLaneScenario.node[0].veinsmobility speed ETV
+vector 5 EmergencyLaneScenario.node[0].veinsmobility acceleration ETV
+vector 6 EmergencyLaneScenario.node[0].veinsmobility co2emission ETV
+vector 7 EmergencyLaneScenario.node[1].veinsmobility speed ETV
+vector 8 EmergencyLaneScenario.node[2].veinsmobility posx ETV
+vector 9 EmergencyLaneScenario.node[2].veinsmobility posy ETV
+vector 10 EmergencyLaneScenario.node[1].veinsmobility acceleration ETV
+vector 11 EmergencyLaneScenario.node[1].veinsmobility co2emission ETV
+vector 12 EmergencyLaneScenario.node[3].veinsmobility posx ETV
+vector 13 EmergencyLaneScenario.node[3].veinsmobility posy ETV
+vector 14 EmergencyLaneScenario.node[2].veinsmobility speed ETV
+vector 15 EmergencyLaneScenario.node[2].veinsmobility acceleration ETV
+vector 16 EmergencyLaneScenario.node[2].veinsmobility co2emission ETV
+vector 17 EmergencyLaneScenario.node[3].veinsmobility speed ETV
+vector 18 EmergencyLaneScenario.node[4].veinsmobility posx ETV
+vector 19 EmergencyLaneScenario.node[4].veinsmobility posy ETV
+vector 20 EmergencyLaneScenario.node[3].veinsmobility acceleration ETV
+vector 21 EmergencyLaneScenario.node[3].veinsmobility co2emission ETV
+vector 22 EmergencyLaneScenario.node[4].veinsmobility speed ETV
+vector 23 EmergencyLaneScenario.node[4].veinsmobility acceleration ETV
+vector 24 EmergencyLaneScenario.node[4].veinsmobility co2emission ETV
+vector 25 EmergencyLaneScenario.node[5].veinsmobility posx ETV
+vector 26 EmergencyLaneScenario.node[5].veinsmobility posy ETV
+vector 27 EmergencyLaneScenario.node[5].veinsmobility speed ETV
+vector 28 EmergencyLaneScenario.node[5].veinsmobility acceleration ETV
+vector 29 EmergencyLaneScenario.node[5].veinsmobility co2emission ETV
+6	4013 922 4 45 3 44 42 0.973 10.53237389643 130.81397225422 601.17030771165
+5	4935 1082 4 45 3 44 42 -1.2180177817587 2.433438217896 13.008234169843 36.062645241399
+4	6017 1058 3 45 2 44 43 2.0578714020317 15.481088737209 581.90905280982 8332.1485591236
+1	7075 599 2 45 1 44 44 26.6 29.8 1285.6 37629.92
+0	7674 1065 2 45 1 44 44 30.1 612.00905280982 13064.308317046 5340629.9969408
+11	8739 1045 5 49 4 48 45 0.973 6.9050382799453 121.39551745301 443.94487571591
+10	9784 1218 5 49 4 48 45 -1.0548045324627 1.8293019986944 11.865762332139 26.412008860845
+7	11002 1134 4 49 3 48 46 1.8865424470045 14.448736614326 587.2672375175 7868.0136250242
+3	12136 643 3 49 2 48 47 29.8 29.8 1400.6 41737.88
+2	12779 1141 3 49 2 48 47 30.1 617.3672375175 14136.369679189 5822457.8997324
+16	13920 1033 7 51 6 50 45 0.973 7.7859054144203 130.17687885507 550.97092384852
+15	14953 1220 7 51 6 50 45 -1.152546754363 2.4799598257989 11.40592236409 37.977012299784
+14	16173 1183 6 51 5 50 46 2.5998513045954 14.28231895242 593.09903603735 7888.2348458651
+9	17356 647 5 51 4 50 47 26.6 26.6 1250.2 33255.32
+8	18003 1150 5 51 4 50 47 30.1 623.19903603735 14633.357649995 6111685.9298799
+24	19153 1071 10 55 9 54 46 0.973 7.5014710718126 130.58633702494 511.29208274526
+23	20224 1255 10 55 9 54 46 -1.2410967106931 2.1507710573962 11.99212323474 34.615166510572
+22	21479 1210 9 55 8 54 47 2.0844450560166 14.084909130356 593.73049562291 7778.9226461176
+19	22689 715 8 55 7 54 48 26.6 29.8 1340.8 37572.48
+18	23404 1227 8 55 7 54 48 30.1 623.83049562291 14887.988372336 6220960.969456
+21	24631 1157 8 59 7 58 52 0.973 6.8547996758717 129.39723213579 438.68466843676
+20	25788 1408 8 59 7 58 52 -1.0897478351137 2.213205013168 9.982830672013 34.167465421347
+17	27196 1365 7 59 6 58 53 1.8164076185087 12.215571974544 585.76945437169 6677.4632389309
+13	28561 801 6 59 5 58 54 29.8 29.8 1609.2 47954.16
+12	29362 1379 6 59 5 58 54 30.1 615.86945437169 16695.6805136 6892823.9199726
+29	30741 1064 14 59 13 58 46 0.973 9.5005617392347 125.057082992 498.21592819717
+28	31805 1256 14 59 13 58 46 -1.0186648366041 2.4174969819607 10.702124927528 35.12981989489
+27	33061 1218 13 59 12 58 47 2.1927444331115 13.864822954065 591.12587801415 7688.1287869361
+26	34279 720 12 59 11 58 48 26.6 26.6 1276.8 33962.88
+25	34999 1236 12 59 11 58 48 31.6 622.72587801415 14954.185506515 6247276.0800512
 

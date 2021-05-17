@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 
 <!--
 // Copyright (C) 2011 Christoph Sommer <sommer@ccs-labs.org>
@@ -31,14 +31,10 @@
 // work.  If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
 -->
 
-<root>
-    <AnalogueModels>
-        <AnalogueModel type="SimplePathlossModel" thresholding="true">
-            <parameter name="alpha" type="double" value="2.0"/>
-        </AnalogueModel>
-    </AnalogueModels>
-    <Decider type="Decider80211p">
-        <!-- The center frequency on which the phy listens-->
-        <parameter name="centerFrequency" type="double" value="5.890e9"/>
-    </Decider>
-</root>
+<!-- debug config -->
+<launch>
+    <copy file="emergencyLane.net.xml" />
+    <copy file="emergencyLane.trips.xml" />
+    <copy file="emergencyLane.sumo.cfg" type="config" />
+</launch>
+
