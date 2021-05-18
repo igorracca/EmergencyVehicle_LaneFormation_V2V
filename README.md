@@ -35,9 +35,18 @@ Installation tutorial can be found in: http://veins.car2x.org/tutorial/
 - omnetpp-5.5.1
 - veins-veins-5.1
 
+ <br />
+
 ## Running
 
+The Project structure follows the Veins sample project structure.
+* Install Veins and its sample project
+* Copy the content of `examples/veins` from this repository to same directory on sample project
+* Do the same for:
+  * `src/veins/modules/application/traci/`
+  * `src/veins/modules/mobility/traci/`
+* Open omnet++ with the command `omnetpp`
+* Run the script to proxy TCP connections between OMNeT++ and SUMO (`sumo-launchd.py -vv -c sumo')
+* Run the project on omnet++
 
-
-## Additional Information
-
+Running part can also be found on the tutorial: http://veins.car2x.org/tutorial/
